@@ -1,0 +1,248 @@
+@font-face {
+	font-family: 'Kefa';
+	font-style: normal;
+	font-weight: normal;
+	src:
+		local('Kefa'),
+		url('../type/Kefa-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Kefa';
+	font-style: normal;
+	font-weight: bold;
+	src:
+		local('Kefa'),
+		url('../type/Kefa-Bold.woff') format('woff');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Kefa", sans-serif;
+	background: #e5e5e5 url(../images/bgbody.png) center;
+}
+
+.clear {
+	clear: both;
+}
+
+div#container {
+	width: 1108px;
+	margin: 0 auto;
+	padding: 0 8px 8px;
+	background: rgba(172, 172, 172, .15);
+}
+
+div#container a.button {
+	padding: 5px;
+	color: #fff;
+	text-decoration: none;
+	background-color: rgb(95, 129, 184);
+	border-radius: 10px;
+	border-width: 0;
+	box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+div#container a.button:hover {
+	text-decoration: none;
+}
+
+div#container > header {
+	height: 192px;
+	background-image: -moz-linear-gradient(top, rgb(145, 183, 21) 0%, rgb(161, 198, 39) 139px, rgb(137, 176, 12) 139px, rgb(137, 176, 12) 100%);
+}
+
+div#container > header > div#topcontent {
+	height: 139px;
+	background: url(../images/bghead.png) center;
+}
+
+div#container > header > div#topcontent > a#logo {
+	float: left;
+	margin: 33px 20px 0;
+}
+
+div#container > header > div#topcontent > div#tagline {
+	float: left;
+	font-size: 13px;
+	color: #666536;
+	text-transform: uppercase;
+	letter-spacing: 3.2px;
+	margin-top: 93px;
+}
+
+div#container > header > nav {
+	height: 53px;
+	padding-top: 6px;
+}
+
+div#container > header > nav > ul {
+	height: 53px;
+	margin: 0;
+	padding: 0;
+}
+
+div#container > header > nav li {
+	list-style-type: none;
+	float: left;
+	margin: 0 0 0 30px;
+	height: 40px;
+	font-size: 15px;
+}
+
+div#container > header > nav li > a {
+	display: inline-block;
+	text-decoration: none;
+	color: #e7ff98;
+	height: 40px;
+	line-height: 40px;
+	background-color: rgb(137, 176, 12);
+	text-shadow: 1px 1px #89900c;
+}
+
+div#container > header > nav li > a:hover,
+div#container > header > nav li.selected > a {
+	color: #fff;
+}
+
+div#container > header > nav li > a > div {
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-right: 5px;
+	background: url(../images/menu.png) no-repeat;
+}
+
+div#container nav li.h > a > div { background-position: 0 -40px; }
+div#container nav li.w > a > div { background-position: -40px -40px; }
+div#container nav li.b > a > div { background-position: -80px -40px; }
+div#container nav li.l > a > div { background-position: -120px -40px; }
+div#container nav li.p > a > div { background-position: -160px -40px; }
+div#container nav li.v > a > div { background-position: -200px -40px; }
+div#container nav li.o > a > div { background-position: -240px -40px; }
+div#container nav li.h > a:hover > div, div#container nav li.h.selected > a div { background-position: 0 0; }
+div#container nav li.w > a:hover > div, div#container nav li.w.selected > a div { background-position: -40px 0; }
+div#container nav li.b > a:hover > div, div#container nav li.b.selected > a div { background-position: -80px 0; }
+div#container nav li.l > a:hover > div, div#container nav li.l.selected > a div { background-position: -120px 0; }
+div#container nav li.p > a:hover > div, div#container nav li.p.selected > a div { background-position: -160px 0; }
+div#container nav li.v > a:hover > div, div#container nav li.v.selected > a div { background-position: -200px 0; }
+div#container nav li.o > a:hover > div, div#container nav li.o.selected > a div { background-position: -240px 0; }
+
+div#content {
+	padding: 40px;
+	background-color: #fff;
+}
+
+div#content > div {
+	float: left;
+	width: 625px;
+}
+
+div#content > div > article h1 {
+	font-size: 30px;
+	font-weight: normal;
+	color: #5f81b8;
+	margin: 0 0 18px 0;
+}
+
+div#content > div > article p {
+	font-family: "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 28.62px;
+}
+
+div#content > aside {
+	float: left;
+	width: 348px;
+}
+
+div#content > div > article > footer > ul.rating > li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+div#content > div > article > footer > ul.rating {
+	display: inline-block;
+	width: 125px;
+	height: 22px;
+	margin: 0;
+	padding: 0;
+}
+
+div#container div#sidebar {
+	float: left;
+	width: 348px;
+	margin: 15px 23px;
+	background-color: rgb(236, 236, 232);
+	background-image: url(../images/bgsidebar.png);
+	border: 4px solid rgb(212, 212, 199);
+}
+
+div#container div#sidebar hr {
+	height: 5px;
+	margin: 0 11px 0 12px;
+	border: solid rgb(246, 246, 244);
+	border-width: 1px 1px 0 0;
+	background-color: rgb(223, 223, 220);
+}
+
+div#sidebar > div#ad1 {
+	text-align: center;
+}
+
+div#ad1 > div.social {
+	width: 259px;
+	height: 127px;
+	margin: -18px auto -12px;
+	padding: 13px 5px 9px;
+	background: url(../images/bubble.png) no-repeat center center;
+	font-weight: bold;
+	font-size: 14px;
+	color: #5f81b8;
+	line-height: 17.62px;
+}
+
+div#ad1 > div.social > div {
+	display: inline-block;
+	margin: 9px auto 0;
+}
+
+div#ad1 > div.social a {
+	display: block;
+	float: left;
+	width: 33px;
+	height: 32px;
+	margin-left: 10px;
+	background: url(../images/social.png) no-repeat top left;
+	-moz-transition: all 0.2s ease-in-out;
+}
+div#ad1 > div.social a:hover {
+	margin-top: -3px;
+}
+div#ad1 > div.social a.fb { background-position: 0 0; margin-left: 0; }
+div#ad1 > div.social a.tw { background-position: -33px 0; }
+div#ad1 > div.social a.gp { background-position: -66px 0; }
+div#ad1 > div.social a.yt { background-position: -99px 0; }
+div#ad1 > div.social a.em { background-position: -132px 0; }
+
+div#sidebar > div#ad2 {
+	text-align: center;
+}
+
+div#sidebar > div#ad3 img {
+	float: right;
+	margin-right: -24px;
+}
+
+div#container > footer {
+	clear: both;
+	height: 78px;
+	background-image: -moz-linear-gradient(top, rgb(173, 173, 173) 0%, rgb(143, 143, 143) 100%);
+}
+
+/* Responsive layout modifications */
+@media screen and (max-device-width: 320px) {
+}

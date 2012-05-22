@@ -1,0 +1,155 @@
+@import "nav/*.png";
+
+body {
+    background: white;
+    font: 16px normal Kefa, serif;
+    color: #32322a;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.separated {
+    &:after {
+        content: " | ";
+    }
+
+    &:last-child:after{
+        content: "";
+    }    
+}
+
+.container {
+    width: 1108px;
+    margin: 0 auto;
+    @include box-shadow();
+}
+
+.contact {
+    color: #485e00;
+    &:before{
+        color: #5f81b8;
+    }
+}
+
+.email {
+    &:before{
+        content: "e.";
+    }
+    color: #485e00;
+    text-decoration: none;
+}
+
+.phone:before {
+    content: "p.";
+};
+header {
+    @include background(linear-gradient(top, #a1c627, #91b715));
+    height: 191px;
+    position: relative;
+
+    article & {
+        background : transparent;
+        height: auto;
+    }
+
+    section {
+        margin-top: 40px;
+        &.logo{
+            margin-left: 7%;
+            width: 50%;
+        }
+        &.search{
+            margin-right: 5%;
+            width: 38%;
+        }
+        height: 100px;
+        width: 50%;
+    }
+}
+
+nav {
+    header & {
+        clear: both;
+        background: #89b00c;
+        height: 53px;
+
+        a {
+            color: #e7ff98;
+            display: inline-block;
+            &:hover {
+                color: white;
+            }
+            margin-left: 4%;
+            padding-top: 15px;
+            height: 53px;
+            &.home {
+                margin-left: 8%;
+                width: 7%;
+                @include nav-sprite(home);
+            }
+            &.robowidgets {
+                width: 12%;
+            }
+            &.roboblog {
+                width: 9%;
+            }
+            &.robolinks {
+                width: 9%;
+            }
+            &.robophotos {
+                width: 10%;
+            }
+            &.robovids {
+                width: 9%;
+            }
+
+        }
+        .robowidget {
+            @include nav-sprite('robowidgets');
+        }
+
+    }
+
+    footer & {
+        a {
+            @extend .separated;
+        }
+
+        background: transparent;
+    }
+
+}
+
+article {
+    height: 302px;
+    border-bottom: 1px solid black;
+}
+
+section {
+    float: left;
+
+    &.articles {
+        clear: left;
+        width: 70%;
+    }
+
+    &.ads {
+        width: 29.2%;
+        border: 4px solid #d4d4c7;
+        @include background(image-url("/img/ad-background.png"),  #ecece8 ) ;
+
+    }
+}
+footer {
+    clear: both;
+    height: 77px;
+    @include background(linear-gradient(#8f8f8f,#adadad));
+
+    article & {
+        background: transparent;
+    }
+}

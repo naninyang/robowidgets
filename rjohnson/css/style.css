@@ -1,0 +1,737 @@
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+body { margin: 0; font-size: 1em; line-height: 1.4; }
+
+::-moz-selection { background: #89b00c; color: #fff; text-shadow: none; }
+::selection { background: #89b00c; color: #fff; text-shadow: none; }
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #00e; }
+a:visited { color: #bdbdbd; }
+a:hover { color: #89b00c; }
+a:focus { outline: none; }
+a:hover, a:active { outline: 0; }
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button[disabled], input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+
+/* ==|== primary styles =====================================================
+   ========================================================================== */
+
+body {
+	background:url(../img/bg.png);
+}
+
+/*Links*/
+a {
+	text-decoration:none;
+}
+
+#container {
+	height:auto;
+	overflow:hidden;
+	width:1110px;
+	border:5px solid rgba(000,000,000,0.05);
+	border-top:none;
+	margin:0 auto 40px auto;
+}
+
+header {
+	height:139px;
+	background:url(../img/hbg.png);
+}
+
+header h1 {
+	margin:32px 0 0 21px;
+	padding-left:72px;
+	float:left;
+	background:url(../img/cogs.png) no-repeat;
+	line-height:.9;
+	height:85px;
+	width:225px;
+}
+
+header h1 a {
+	font-family:"comfortaa";
+	font-size:45px;
+	color:#ffffff;
+	text-shadow:1px 1px 1px rgba(000,000,000, 0.2);
+	position:relative;
+}
+
+header h1 a:hover {
+	color:#e7ff98;
+}
+
+header h1 a:active {
+	color:whitesmoke;
+	text-shadow:2px 2px 2px rgba(000,000,000, 0.1);
+}
+
+header h1 span {
+	font-family:"bad robot";
+	position:absolute;
+	left:-15px;
+	top: 47px;
+	font-size:40px;
+}
+
+p#tag {
+	font-family:"kefa";
+	letter-spacing:3px;
+	font-size:13px;
+	float:left;
+	margin-top:91px;
+	color:#666536;
+	opacity:.8;
+}
+
+
+
+#search {
+	width:475px;
+	float:right;
+	font-size:13px;
+	font-family:"kefa";
+	padding-top:30px;
+}
+
+#search p {
+		color:#485e00;
+		margin-bottom:10px;
+}
+
+#search .rm-btn {
+	background-color:#5f81b8;
+	text-shadow:2px 2px 2px rgba(000,000,000,0.2);
+	margin-right:5px;
+	padding:5px 10px;
+}
+
+#search span {
+	float:none;
+}
+
+.b {
+	color:#5f81b8;
+}
+
+#search input {
+	padding:8px;
+	border:1px solid #485e00;
+	width:74%;
+}
+
+#search .submit {
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px;
+	background-color:#5f81b8;
+	border:none;
+	color:#fff;
+	font-family:"kefa";
+	padding:7px 15px;
+	font-size:16px;
+	text-shadow:2px 2px 2px rgba(000,000,000,0.2);
+	margin-left:-20px;
+	width:80px;
+}
+
+nav {
+	background:#89b00c;
+	height:52px;
+}
+
+nav ul {
+	list-style-type:none;
+	margin-left:32px;
+}
+
+nav ul li a {
+	height:37px;
+	display:inline;
+	float:left;
+	font-family:"Kefa", serif;	
+	padding:15px 0 0 54px;
+	color:#e7ff98;
+	text-shadow:2px 2px 2px rgba(000,000,000, 0.1);
+}
+
+nav ul li a.current {
+	color:#fff;
+}
+
+nav ul li a#home {
+	background:url(../img/nav2.png) no-repeat -30px 0;
+	width:61px;
+}
+
+nav ul li a#widgets {
+	background:url(../img/nav2.png) no-repeat -146px 0;
+	width:105px;
+}
+
+nav ul li a#blog {
+	background:url(../img/nav2.png) no-repeat -305px 0;
+	width:87px;
+}
+
+nav ul li a#links {
+	background:url(../img/nav2.png) no-repeat -446px 0;
+	width:91px;
+}
+
+nav ul li a#photos {
+	background:url(../img/nav2.png) no-repeat -590px 0;
+	width:101px;
+}
+
+nav ul li a#vids {
+	background:url(../img/nav2.png) no-repeat -745px 0;
+	width:76px;
+}
+
+nav ul li a#hobos {
+	background:url(../img/nav2.png) no-repeat -876px 0;
+	width:86px;
+}
+
+nav ul li a:hover, nav ul li a.current {
+	color:#ffffff;
+}
+
+nav ul li a#home:hover, nav ul li a#home.current {
+	background-position:-30px -53px;
+}
+
+nav ul li a#widgets:hover, nav ul li a#widgets.current {
+	background-position:-146px -53px;
+}
+
+nav ul li a#blog:hover, nav ul li a#blog.current {
+	background-position:-305px -53px;
+}
+
+nav ul li a#links:hover, nav ul li a#links.current {
+	background-position:-446px -53px;
+}
+
+nav ul li a#photos:hover, nav ul li a#photos.current {
+	background-position:-590px -53px;
+}
+
+nav ul li a#vids:hover, nav ul li a#vids.current {
+	background-position:-745px -53px;
+}
+
+nav ul li a#hobos:hover, nav ul li a#hobos.current {
+	background-position:-876px -53px;
+	width:86px;
+}
+
+#content {
+	height:auto;
+	overflow:hidden;
+	background:#ffffff;
+	padding:42px 0 40px 42px;	
+}
+
+#content h2 {
+	margin:0 0 10px 0;
+	font-family:"kefa";
+	font-size:28px;
+	font-weight:100;
+	letter-spacing:1px;
+	line-height:1.2;
+	padding-right:40px; /* For some reason the template shows has the header at less of a width than its parent element. This is evident with the last headline. "Factor" should be on line 1 not 2 */
+}
+
+#content h2 a {
+	color:#5f81b8;
+}
+
+#content p {
+	color:#666666;
+	line-height:1.8;
+}
+
+.lcol {
+	width:626px;
+	float:left;
+	height:auto;
+	overflow:hidden;
+}
+
+.rcol {
+	float:right;
+	background:url(../img/rc-bg.png);
+	border:4px solid #d4d4c7;
+	height:976px;
+	width:350px;
+	position:relative;
+	margin:13px 46px 0 0;
+}
+
+#speech {
+	height:477px;
+	width:326px;
+	background:url(../img/robot.png);
+	position:absolute;
+	top:-17px;
+	left:8px;
+}
+
+#speech p {
+	color:#5f81b8;
+	font-weight:bold;
+	font-size:13px;
+	font-family:"Kefa", serif;
+	text-align:center;
+	width:223px;
+	margin:10px 57px 5px 56px;
+	line-height:1.6;
+}
+
+ul.social {
+	height:32px;
+	width:215px;
+	margin:0 0 0 65px;
+	padding:0;
+	list-style-type:none;
+}
+
+ul.social li {
+	display:block;
+	float:left;
+	width:33px;
+	height:32px;
+	margin-right:10px;
+}
+
+ul.social li a {
+	width:inherit;
+	height:inherit;
+	float:left;
+	background-image:url(../img/social.png);
+}
+
+ul.social li a.twitter {
+	background-position:162px 0;
+}
+
+ul.social li a.google {
+	background-position:119px 0;
+}
+
+ul.social li a.youtube {
+	background-position:76px 0;
+}
+
+ul.social li a.email {
+	background-position:33px 0;
+}
+
+#army {
+	margin-top:481px;
+	background:url(../img/chevron.png) no-repeat 40px 0;
+}
+
+.rcol #army h3 {
+	padding-left:130px;
+	font-size:13px;
+	text-transform:uppercase;
+	color:#333;
+	margin-bottom:0;
+}
+
+#army h3 span#hrobot {
+	font:35px "comfortaa";
+	color:#767676;
+	text-align:center;
+	display:block;
+	font-weight:100;
+	padding:5px 0 0 0;
+	width:185px;
+}
+
+#army h3 span#harmy {
+	font:45px "bad robot";
+	color:#89b00c;
+	display:block;
+	text-align:center;
+	margin-top:-33px;
+	width:185px;
+}
+
+#army p, #destruction p {
+	font-size:11px;
+	color:#333;
+	margin:3px 14px 0 30px;
+	line-height:1.9;
+}
+
+.rcol #destruction {
+	width:240px;
+}
+
+#destruction h3 {
+	font-size:17px;
+	margin-left:30px;
+	margin-bottom:4px;
+}
+
+#destruction img {
+	position:absolute;
+	right:-21px;
+	bottom:61px;
+}
+
+.rm-btn {
+	font-family:"kefa";
+	background:#89b00c;
+	padding:7px 10px;
+	color:#ffffff;
+	font-size:14px;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px;
+	-moz-box-shadow: 2px 2px 2px rgba(000,000,000,0.2);
+	-webkit-box-shadow: 2px 2px 2px rgba(000,000,000,0.2);
+	box-shadow: 2px 2px 2px rgba(000,000,000,0.2);
+}
+
+.enlist {
+	float:right;
+	background-color:#5f81b8;
+	padding:2px 10px;
+	font-size:12px;
+	margin-bottom:20px;
+}
+
+.clearall.border-btm {
+	height:5px;
+	margin:0 7px;
+	background:url(../img/robot.png) 0 -472px;	
+	clear:both;
+}
+
+.rm-btn:hover {
+	background-color:#998900;
+	color:#ffffff;
+}
+
+.rm-btn:active {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+p.rating {
+	font-family:"keva";
+	letter-spacing:1px;
+	padding:10px 0;
+	margin-top:25px;
+	background:url(../img/dot.gif) repeat-x;
+	border-bottom:1px solid #333333;
+}
+
+p.rating img {
+	margin:-5px 0 0 5px;
+}
+
+footer {
+	height:auto;
+	overflow:hidden;
+	color:#ffffff;
+	font-size:12px;
+	padding:20px 40px;
+	background: #acacac; /* Old browsers */
+	background: -moz-linear-gradient(top,  #acacac 0%, #8f8f8f 72%, #8f8f8f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#acacac), color-stop(72%,#8f8f8f), color-stop(100%,#8f8f8f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #acacac 0%,#8f8f8f 72%,#8f8f8f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #acacac 0%,#8f8f8f 72%,#8f8f8f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #acacac 0%,#8f8f8f 72%,#8f8f8f 100%); /* IE10+ */
+	background: linear-gradient(top,  #acacac 0%,#8f8f8f 72%,#8f8f8f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#acacac', endColorstr='#8f8f8f',GradientType=0 ); /* IE6-9 */
+}
+
+footer .lcol {
+	width:490px;
+}
+
+footer .rcol {
+	width:275px;
+	margin:0;
+	height:auto;
+	background:none;
+	border:none;
+}
+
+footer .rcol p {
+	float:left;
+	margin-right:10px;
+}
+
+footer .rcol ul.social.small {
+	width:84px;
+	height:16px;
+	float:right;
+	margin-left:0;
+}
+
+footer .rcol ul.social.small li {
+	width:16px;
+	margin-right:5px;
+}
+
+ul.social.small li a {
+	background:url(../img/social-sm.png);
+	height:16px;
+	width:16px;
+}
+
+ul.social.small li a.twitter {
+	background-position:58px 0;
+}
+
+ul.social.small li a.google {
+	background-position:37px 0;
+}
+
+ul.social.small li a.youtube {
+	background-position:16px 0;
+}
+
+footer .rcol p#erm {
+	float:right;
+	margin:0 3px 0 0;
+}
+
+footer .rcol p a.rm-btn.enlist {
+	font-size:10px;
+	margin:0;
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+}
+
+footer p {
+	margin:0 0 8px 0;
+}
+
+footer p span.g {
+	color:#bfd774;
+}
+
+footer span#flogin {
+	float:right;
+}
+
+/* ==|== media queries for 320 ======================================================
+   ========================================================================== */
+
+@media only screen and (max-width: 35em) {
+
+  #container {
+  	width: 320px;
+  	border:none;
+  }
+  
+  header {
+	background:url(../img/hbgm.png);
+	height:266px;	
+  }
+  
+  header h1 {
+	margin:30px auto 15px auto;
+	display:inline-table;
+	width:280px;	
+  }
+  
+  p#tag {
+	margin:0;
+	text-align:center;
+	width:100%;
+  }
+  
+  #search {
+	padding:0 10px;
+	width:90%;	
+  }
+  
+  #search p {
+	text-align:center;
+	margin-top:15px;	
+  }
+  
+  #search #input {
+	width:200px;	
+  }
+  
+  #search p span#signin {	
+  	clear:both !important;
+  	display:block;
+  	text-align:center;
+  	margin-top:10px;
+  }
+  
+  nav {
+	height:auto;
+	overflow:hidden;
+	width:100%;
+  }
+  
+  nav ul {
+	margin-left:0;	
+  }
+  
+  nav ul li {
+	width:159px;
+	float:left;	
+	text-align:center;
+  }
+  
+  nav ul li a {
+	background:none !important;
+	padding:15px 0;
+	width:inherit !important;
+	height:inherit;
+  }
+  
+  nav ul li a#home {
+	border-bottom:1px solid #b0d244;
+	border-right:1px solid #b0d244;
+}
+
+nav ul li a#widgets {
+	border-bottom:1px solid #b0d244;
+}
+
+nav ul li a#blog {
+	border-bottom:1px solid #b0d244;
+	border-right:1px solid #b0d244;
+}
+
+nav ul li a#links {
+	border-bottom:1px solid #b0d244;
+}
+
+nav ul li a#photos {
+	border-bottom:1px solid #b0d244;
+	border-right:1px solid #b0d244;
+}
+
+nav ul li a#vids {
+	border-bottom:1px solid #b0d244;
+}
+
+nav ul li a#hobos {
+	border-bottom:1px solid #b0d244;
+	width:320px !important;
+}
+  
+  #content {
+	padding:20px 20px 0 20px;
+  }
+  
+  .lcol {
+  	width:inherit;
+  }
+  
+  .lcol h2 {
+	padding:0 !important;
+   }
+  
+  .lcol h2 a{
+	font-size:23px;	
+  }
+  
+  .rcol {
+	width:320px;
+	margin:15px 0 0 0;	
+	position:relative;
+	right:-24px;
+  }
+  
+  #army {
+	background-position:20px 6px;
+   }
+  
+  #army h3 {
+	padding-left:110px !important;	
+  }
+  
+  #army p {
+	margin:2px 15px;
+  }
+  
+  #destruction h3, #destruction p {
+	margin-left:15px;
+	width:195px;
+  }
+  
+  footer {
+	padding:15px;	
+  }
+  
+  footer .lcol, footer .rcol {
+	width:inherit;
+  }
+  
+
+  
+  footer .rcol {
+	position:relative;
+	left:0;	
+  }
+  
+}

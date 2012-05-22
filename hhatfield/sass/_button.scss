@@ -1,0 +1,27 @@
+.button {
+   border: 1px solid #0a3c59;
+   @include background(#5f81b8);
+   padding: 8px 16px;
+   @include border-radius(5px);
+   @include box-shadow(rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0);
+   text-shadow: #7ea4bd 0 1px 0;
+   color: #fff;
+   font-size: 13px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+
+   &:hover {
+      text-shadow: #1e4158 0 1px 0;
+      @include background(#3e779d, linear-gradient(top, #65a9d7, #3e779d));
+   }
+
+   &:active {
+      text-shadow: #1e4158 0 1px 0;
+      @include background(#65a9d7, linear-gradient(top, #3e779d, #65a9d7));
+   }
+}
+
+.button.green {
+    background: #89b00c;
+}

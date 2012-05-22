@@ -1,0 +1,12 @@
+/* line 1, ../../sass/layout.scss */
+body {
+  background: white;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 8, ../../sass/layout.scss */
+.container {
+  width: 800px;
+}

@@ -1,0 +1,230 @@
+/* line 146, nav/*.png */
+.nav-sprite, header nav a.home, header nav .robowidget {
+  background: url('../img/nav-sfa96c7bbdf.png') no-repeat;
+}
+
+/* line 3, ../../sass/_layout.scss */
+body {
+  background: white;
+  font: 16px normal Kefa, serif;
+  color: #32322a;
+  margin: 0px;
+}
+
+/* line 10, ../../sass/_layout.scss */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 16, ../../sass/_layout.scss */
+.separated:after, footer nav a:after {
+  content: " | ";
+}
+/* line 20, ../../sass/_layout.scss */
+.separated:last-child:after, footer nav a:last-child:after {
+  content: "";
+}
+
+/* line 25, ../../sass/_layout.scss */
+.container {
+  width: 1108px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+/* line 31, ../../sass/_layout.scss */
+.contact {
+  color: #485e00;
+}
+/* line 33, ../../sass/_layout.scss */
+.contact:before {
+  color: #5f81b8;
+}
+
+/* line 38, ../../sass/_layout.scss */
+.email {
+  color: #485e00;
+  text-decoration: none;
+}
+/* line 39, ../../sass/_layout.scss */
+.email:before {
+  content: "e.";
+}
+
+/* line 46, ../../sass/_layout.scss */
+.phone:before {
+  content: "p.";
+}
+
+/* line 49, ../../sass/_layout.scss */
+header {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a1c627), color-stop(100%, #91b715));
+  background: -webkit-linear-gradient(top, #a1c627, #91b715);
+  background: -moz-linear-gradient(top, #a1c627, #91b715);
+  background: -o-linear-gradient(top, #a1c627, #91b715);
+  background: -ms-linear-gradient(top, #a1c627, #91b715);
+  background: linear-gradient(top, #a1c627, #91b715);
+  height: 191px;
+  position: relative;
+}
+/* line 54, ../../sass/_layout.scss */
+article header {
+  background: transparent;
+  height: auto;
+}
+/* line 59, ../../sass/_layout.scss */
+header section {
+  margin-top: 40px;
+  height: 100px;
+  width: 50%;
+}
+/* line 61, ../../sass/_layout.scss */
+header section.logo {
+  margin-left: 7%;
+  width: 50%;
+}
+/* line 65, ../../sass/_layout.scss */
+header section.search {
+  margin-right: 5%;
+  width: 38%;
+}
+
+/* line 75, ../../sass/_layout.scss */
+header nav {
+  clear: both;
+  background: #89b00c;
+  height: 53px;
+}
+/* line 80, ../../sass/_layout.scss */
+header nav a {
+  color: #e7ff98;
+  display: inline-block;
+  margin-left: 4%;
+  padding-top: 15px;
+  height: 53px;
+}
+/* line 83, ../../sass/_layout.scss */
+header nav a:hover {
+  color: white;
+}
+/* line 89, ../../sass/_layout.scss */
+header nav a.home {
+  margin-left: 8%;
+  width: 7%;
+  background-position: 0 -348px;
+}
+/* line 94, ../../sass/_layout.scss */
+header nav a.robowidgets {
+  width: 12%;
+}
+/* line 97, ../../sass/_layout.scss */
+header nav a.roboblog {
+  width: 9%;
+}
+/* line 100, ../../sass/_layout.scss */
+header nav a.robolinks {
+  width: 9%;
+}
+/* line 103, ../../sass/_layout.scss */
+header nav a.robophotos {
+  width: 10%;
+}
+/* line 106, ../../sass/_layout.scss */
+header nav a.robovids {
+  width: 9%;
+}
+/* line 111, ../../sass/_layout.scss */
+header nav .robowidget {
+  background-position: 0 -33px;
+}
+/* line 117, ../../sass/_layout.scss */
+footer nav {
+  background: transparent;
+}
+
+/* line 127, ../../sass/_layout.scss */
+article {
+  height: 302px;
+  border-bottom: 1px solid black;
+}
+
+/* line 132, ../../sass/_layout.scss */
+section {
+  float: left;
+}
+/* line 135, ../../sass/_layout.scss */
+section.articles {
+  clear: left;
+  width: 70%;
+}
+/* line 140, ../../sass/_layout.scss */
+section.ads {
+  width: 29.2%;
+  border: 4px solid #d4d4c7;
+  background: url(/img/ad-background.png), #ecece8;
+}
+
+/* line 147, ../../sass/_layout.scss */
+footer {
+  clear: both;
+  height: 77px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8f8f8f), color-stop(100%, #adadad));
+  background: -webkit-linear-gradient(#8f8f8f, #adadad);
+  background: -moz-linear-gradient(#8f8f8f, #adadad);
+  background: -o-linear-gradient(#8f8f8f, #adadad);
+  background: -ms-linear-gradient(#8f8f8f, #adadad);
+  background: linear-gradient(#8f8f8f, #adadad);
+}
+/* line 152, ../../sass/_layout.scss */
+article footer {
+  background: transparent;
+}
+
+/* line 1, ../../sass/_button.scss */
+.button {
+  border: 1px solid #0a3c59;
+  background: #5f81b8;
+  padding: 8px 16px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 0px 0;
+  -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 0px 0;
+  box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 0px 0;
+  text-shadow: #7ea4bd 0 1px 0;
+  color: #fff;
+  font-size: 13px;
+  font-family: helvetica, serif;
+  text-decoration: none;
+  vertical-align: middle;
+}
+/* line 14, ../../sass/_button.scss */
+.button:hover {
+  text-shadow: #1e4158 0 1px 0;
+  background: #3e779d, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #65a9d7), color-stop(100%, #3e779d));
+  background: #3e779d, -webkit-linear-gradient(top, #65a9d7, #3e779d);
+  background: #3e779d, -moz-linear-gradient(top, #65a9d7, #3e779d);
+  background: #3e779d, -o-linear-gradient(top, #65a9d7, #3e779d);
+  background: #3e779d, -ms-linear-gradient(top, #65a9d7, #3e779d);
+  background: #3e779d, linear-gradient(top, #65a9d7, #3e779d);
+}
+/* line 19, ../../sass/_button.scss */
+.button:active {
+  text-shadow: #1e4158 0 1px 0;
+  background: #65a9d7, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3e779d), color-stop(100%, #65a9d7));
+  background: #65a9d7, -webkit-linear-gradient(top, #3e779d, #65a9d7);
+  background: #65a9d7, -moz-linear-gradient(top, #3e779d, #65a9d7);
+  background: #65a9d7, -o-linear-gradient(top, #3e779d, #65a9d7);
+  background: #65a9d7, -ms-linear-gradient(top, #3e779d, #65a9d7);
+  background: #65a9d7, linear-gradient(top, #3e779d, #65a9d7);
+}
+
+/* line 25, ../../sass/_button.scss */
+.button.green {
+  background: #89b00c;
+}

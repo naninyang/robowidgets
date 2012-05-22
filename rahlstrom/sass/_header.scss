@@ -1,0 +1,17 @@
+#page_header {
+    color: $nav-header;
+    background: $green url(#{$image-path}green_lines.png) top left repeat-x scroll;
+
+    h1, h2 {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 4.433rem;
+    }
+
+    h2 {
+        color: $nav-sub-header;
+        font-size: 1.3rem;
+    }
+}

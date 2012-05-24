@@ -35,13 +35,14 @@ div#container {
 }
 
 div#container a.button {
-	padding: 5px;
+	padding: 7px 15px;
 	color: #fff;
 	text-decoration: none;
 	background-color: rgb(95, 129, 184);
 	border-radius: 10px;
 	border-width: 0;
 	box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.2);
+	text-shadow: 1px 1px rgba(0, 89, 91, 0.29);
 }
 
 div#container a.button:hover {
@@ -134,22 +135,33 @@ div#content {
 	background-color: #fff;
 }
 
-div#content > div {
+div#content > section {
 	float: left;
 	width: 625px;
 }
 
-div#content > div > article h1 {
+div#content > section > article h1 {
 	font-size: 30px;
 	font-weight: normal;
 	color: #5f81b8;
 	margin: 0 0 18px 0;
 }
 
-div#content > div > article p {
+div#content > section > article p {
 	font-family: "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 28.62px;
+}
+
+div#content > section > article a.button {
+	background-color: rgb(137, 176, 12);
+}
+
+div#content > section > article > footer {
+	margin: 27px 0 19px;
+	padding: 13px 0 11px;
+	background: url(../images/articleborder.png) repeat-x left top;
+	border-bottom: 1px solid rgb(102, 101, 54);
 }
 
 div#content > aside {
@@ -157,21 +169,55 @@ div#content > aside {
 	width: 348px;
 }
 
-div#content > div > article > footer > ul.rating > li {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	float: left;
-}
-
-div#content > div > article > footer > ul.rating {
+/* Star ratings (half-star increments) */
+fieldset.rating {
 	display: inline-block;
-	width: 125px;
-	height: 22px;
-	margin: 0;
 	padding: 0;
+	border-width: 0;
 }
 
+fieldset.rating legend {
+	float: left;
+	line-height: 22px;
+}
+
+fieldset.rating:not(:checked) > input {
+	position: absolute;
+	left: -9999px;
+	clip: rect(0, 0, 0, 0);
+}
+
+fieldset.rating:not(:checked) > label {
+	float: right;
+	width: 12.5px;
+	height: 22px;
+	background: url(../images/stars.png) no-repeat left top;
+	text-indent: -9999px;
+}
+
+fieldset.rating:not(:checked) > label.l { background-position: 0 0; }
+fieldset.rating:not(:checked) > label.r { background-position: -12.5px 0; }
+
+fieldset.rating > input:checked ~ label.l { background-position: 0 -22px; }
+fieldset.rating > input:checked ~ label.r { background-position: -12.5px -22px; }
+
+fieldset.rating:not(:checked) > label.l:hover,
+fieldset.rating:not(:checked) > label:hover ~ label.l { background-position: 0 -44px; }
+fieldset.rating:not(:checked) > label.r:hover,
+fieldset.rating:not(:checked) > label:hover ~ label.r { background-position: -12.5px -44px; }
+
+fieldset.rating > input:checked + label.l:hover,
+fieldset.rating > input:checked + label:hover ~ label.l,
+fieldset.rating > input:checked ~ label.l:hover,
+fieldset.rating > input:checked ~ label:hover ~ label.l,
+fieldset.rating > label:hover ~ input:checked ~ label.l { background-position: 0 -44px; }
+fieldset.rating > input:checked + label.r:hover,
+fieldset.rating > input:checked + label:hover ~ label.r,
+fieldset.rating > input:checked ~ label.r:hover,
+fieldset.rating > input:checked ~ label:hover ~ label.r,
+fieldset.rating > label:hover ~ input:checked ~ label.r { background-position: -12.5px -44px; }
+
+/* Sidebar */
 div#container div#sidebar {
 	float: left;
 	width: 348px;
@@ -191,8 +237,71 @@ div#container div#sidebar hr {
 
 div#sidebar > div#ad1 {
 	text-align: center;
+	height: 483px;
+	position: relative;
 }
 
+/* Robot w/hovering effects */
+div#robo {
+	width: 313px;
+	height: 282px;
+	margin: 0 auto;
+}
+
+@-moz-keyframes rbody {
+	0% { margin-top: 0px; }
+	100% { margin-top: 10px; }
+}
+
+div#robo > div.body {
+	width: 313px;
+	height: 239px;
+	margin-bottom: -8px;
+	background: url(../images/robobody.png) no-repeat center top;
+	-moz-animation-name: rbody;
+	-moz-animation-duration: 0.8s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: alternate;
+	-moz-animation-timing-function: ease-in-out;
+}
+
+@-moz-keyframes rfire {
+	0% { opacity: 1; }
+	100% { opacity: 0.7; }
+}
+
+div#robo > div.fire {
+	width: 313px;
+	height: 50px;
+	background: url(../images/robofire.png) no-repeat center top;
+	-moz-animation-name: rfire;
+	-moz-animation-duration: 0.05s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: alternate;
+	-moz-animation-timing-function: ease-in-out;
+}
+
+@-moz-keyframes rshadow {
+	0% { background-size: 90%; }
+	100% { background-size: 100%; }
+}
+
+div#roboshadow {
+	width: 313px;
+	height: 64px;
+	background: url(../images/roboshadow.png) no-repeat center center;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -156.5px;
+	-moz-animation-name: rshadow;
+	-moz-animation-duration: 0.8s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: alternate;
+	-moz-animation-timing-function: ease-in-out;
+}
+
+/* Social bubble */
 div#ad1 > div.social {
 	width: 259px;
 	height: 127px;
@@ -241,6 +350,24 @@ div#container > footer {
 	clear: both;
 	height: 78px;
 	background-image: -moz-linear-gradient(top, rgb(173, 173, 173) 0%, rgb(143, 143, 143) 100%);
+}
+
+/* Robot hover */
+@-moz-keyframes hover {
+	0% {
+		margin-top: 0px;
+	}
+	100% {
+		margin-top: 10px;
+	}
+}
+
+div#ad1 > img {
+	-moz-animation-name: hover;
+	-moz-animation-duration: 0.8s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: alternate;
+	-moz-animation-timing-function: ease-in-out;
 }
 
 /* Responsive layout modifications */

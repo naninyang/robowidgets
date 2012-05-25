@@ -1,0 +1,76 @@
+/* Tags */
+
+body {
+	background-color: white; 
+	margin: 0; 
+	padding: 0; 
+	font-family: sans-serif; 
+	font-size: 12px; 
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+/* Classes */
+
+.biz-item {
+	font-family: bad-robot;
+	font-size: 40px;
+	text-shadow: 3px 3px rgba(0, 0, 0, 0.24);
+	line-height: 0px;
+	margin-left: -10px;
+}
+
+.biz-pre {
+	font-family: comfortaa-light;
+	font-size: 40px;
+	text-shadow: 3px 3px rgba(0, 0, 0, 0.24);
+	line-height: 50px;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+
+.clear {
+	clear: left;
+}
+
+.logo {
+	color: white;
+	background: rgb(145, 185, 0);
+	height: 85px;
+	width: 320px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: left;
+}
+
+.logoimg {
+	margin-left: 20px;
+	opacity: 0.24; 
+	float: left;
+}
+
+.tagwords {
+	text-align: center;
+}
+
+.title {
+	margin-top: 0;
+}
+
+/* ID's */
+
+#nav {
+	background-color: yellow;
+}
+
+#tagline {
+	background: rgb(140, 180, 0);
+	float: left;
+	width: 320px;
+}
+
+#signin {
+
+}

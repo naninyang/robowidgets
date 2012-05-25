@@ -1,0 +1,39 @@
+@font-face {
+	font-family: bad-robot;
+	src: url(../fonts/bad_robot/badrobot.ttf);
+}
+
+@font-face {
+	font-family: bad-robot-italic;
+	src: url(../fonts/bad_robot/badroboti.ttf);
+}
+
+@font-face {
+	font-family: bad-robot-3d;
+	src: url(../fonts/bad_robot/badrobot3d.ttf);
+}
+
+@font-face {
+	font-family: bad-robot-3d-italic;
+	src: url(../fonts/bad_robot/badrobot3di.ttf);
+}
+
+@font-face {
+	font-family: bad-robot-line;
+	src: url(../fonts/bad_robot/badrobotl.ttf);
+}
+
+@font-face {
+	font-family: bad-robot-line-italic;
+	src: url(../fonts/bad_robot/badrobotil.ttf);
+}
+
+@font-face {
+	font-family: bad-robot-3d-line;
+	src: url(../fonts/bad_robot/badrobotl3d.ttf);
+}
+
+@font-face {
+	font-family: bad-robot-3d-line-italic;
+	src: url(../fonts/bad_robot/badrobotl3di.ttf);
+}

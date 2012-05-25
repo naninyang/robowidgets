@@ -1,0 +1,3 @@
+This is my entry for the CSS Off.  Unfortunately, I didn't get very far.  I did, however, get some time to learn some new things that I wouldn't have used in my daily work.  The most important of which was probably CSS embedded fonts.  I used embedded fonts to recreate the Robo Widgets logo.  Because the fonts actually render differently in different browsers, I imagine a real company might not stand for the variation in their logo, but it was an interesting exercise.
+
+- Joel
